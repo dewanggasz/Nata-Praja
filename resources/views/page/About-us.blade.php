@@ -51,8 +51,8 @@
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Layanan"><span>Layanan</span></a></li>
                     <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="Tentang Kami"><span>Tentang Kami</span></a></li>
-                    <li><a href="/assets/page/artikel.html" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
-                    <li><a href="/assets/page/faq.html" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
+                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
+                    <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
                     <li><a href="/assets/page/career.html" class="horizontal-slide" data-replace="Karir" style="color: rgb(15, 41, 22);"><span>Karir</span></a></li>
@@ -71,10 +71,10 @@
                 <ul>
                     <li><a href="{{route('layanan')}}">Layanan</a></li>
                     <li><a href="{{route('aboutUs')}}">Tentang</a></li>
-                    <li><a href="/assets/page/artikel.html">Berita</a></li>
-                    <li><a href="/assets/page/faq.html">FAQ</a></li>
-                    <li><a href="/assets/page/career.html">Karir</a></li>
-                    <li><a href="/assets/page/contact-us.html">CONTACT</a></li>
+                    <li><a href="{{route('artikel')}}">Berita</a></li>
+                    <li><a href="{{route('faq')}}">FAQ</a></li>
+                    <li><a href="{{route('karir')}}">Karir</a></li>
+                    <li><a href="{{route('contact')}}">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -95,7 +95,7 @@
     <main class="main-content main-container">
         <section id="scrolltop" class="page-cover">
             <div class="page-cover__wrapper">
-                <img src="{{asset('resources/img/article-cover.jpg')}}" alt="" class="page-cover-img" loading="lazy">
+                <img src="{{asset('resources/img/Management Team/IMG-3.png')}}" alt="" class="page-cover-img" loading="lazy">
                 <div class="page-cover__overlay">
                     <div class="page-cover__overlay-top">
                         <div class="sub-title">About Us</div>
@@ -263,29 +263,29 @@
                         <div class="about-us__team-content-card">
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/budiyana.png')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Komisaris/Budiyana.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Budiyana</h3>
-                                    <p class="about-us__team-card-title">Commissioner</p>
+                                    <p class="about-us__team-card-title">Komisaris</p>
                                 </div>
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/Reza M Tahmrin.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Komisaris/Reza.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Reza M Thamrin</h3>
-                                    <p class="about-us__team-card-title">Commissioner</p>
+                                    <p class="about-us__team-card-title">Komisaris</p>
                                 </div>
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/Harnoko Martono.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Komisaris/Harnoko.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Harnoko Martono</h3>
-                                    <p class="about-us__team-card-title">Commissioner</p>
+                                    <p class="about-us__team-card-title">Komisaris</p>
                                 </div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@
                         <div class="about-us__team-content-card">
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Pak Rizal.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Rizal Moch Ganjar</h3>
@@ -306,7 +306,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Pak Laudi.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Laudi Fajar Prihatmoko</h3>
@@ -315,7 +315,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Mbak Tika.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Atikah Nur Awanis</h3>
@@ -324,7 +324,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/hani.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Hanifah Nur Aini</h3>
@@ -333,7 +333,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Aul.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Aulia</h3>
@@ -342,16 +342,16 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/pungky.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
-                                    <h3 class="about-us__team-card-name">Irfan Andrianto</h3>
+                                    <h3 class="about-us__team-card-name">Pungky Suryo</h3>
                                     <p class="about-us__team-card-title">General Affair</p>
                                 </div>
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/dewi.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Dewi Asiyah</h3>
@@ -360,7 +360,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/arga.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Arga Putra Fani</h3>
@@ -369,7 +369,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Mas Cadipa.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Cadipa Sidiq</h3>
@@ -378,16 +378,16 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/fatur.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
-                                    <h3 class="about-us__team-card-name">Paturrr</h3>
+                                    <h3 class="about-us__team-card-name">Fathur</h3>
                                     <p class="about-us__team-card-title">Staff IT</p>
                                 </div>
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Mas Indra.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Indra</h3>
@@ -396,7 +396,7 @@
                             </div>
                             <div class="about-us__team-card">
                                 <div class="about-us__team-card-img">
-                                    <img src="{{asset('resources/img/Team/vecteezy_smiling-and-looking-at-camera-of-beautiful-asian-woman_23464998.jpg')}}" alt="" loading="lazy">
+                                    <img src="{{ asset('resources/img/Management Team/Surya.png') }}" alt="" loading="lazy">
                                 </div>
                                 <div class="about-us__team-card-info">
                                     <h3 class="about-us__team-card-name">Dewangga Surya</h3>
@@ -418,7 +418,7 @@
                 <div class="profil-deskription">
                     <div class="footer__logo">
                         <div class="footer__contenttoplogo">
-                            <img src="/assets/resources/img/LOGO NPS WHITE.png" alt="" class="logowhite">
+                            <img src="{{ asset('resources/img/LOGO NPS WHITE.png') }}" alt="" class="logowhite">
                         </div>
                         <div class="footer__logotype">NATA PRAJA</div>
                     </div>
@@ -436,16 +436,16 @@
                         <ul class="footer-nav-list">
                             <li><a href="/" class="footer-nav-items">Home</a></li>
                             <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
-                            <li><a href="/assets/page/artikel.html" class="footer-nav-items">Article</a></li>
-                            <li><a href="/assets/page/faq.html" class="footer-nav-items">FAQ</a></li>
-                            <li><a href="/assets/page/gallery.html" class="footer-nav-items">Gallery</a></li>
+                            <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
+                            <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
+                            <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
                         </ul>
                     </div>
                     <div class="footer-nav-work footer-nav-wrapper">
                         <ul class="footer-nav-head">Work</ul>
                         <ul class="footer-nav-list">
                             <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
-                            <li><a href="/assets/page/contact-us.html" class="footer-nav-items">Contact Us</a></li>
+                            <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-nav-social footer-nav-wrapper">
@@ -484,18 +484,18 @@
                 <div class="footer-nav-company footer-nav-wrapper">
                     <ul class="footer-nav-head">Company</ul>
                     <ul class="footer-nav-list">
-                        <li><a href="/index.html" class="footer-nav-items">Home</a></li>
-                        <li><a href="/assets/page/About-us.html" class="footer-nav-items">About us</a></li>
-                        <li><a href="/assets/page/artikel.html" class="footer-nav-items">Article</a></li>
-                        <li><a href="/assets/page/faq.html" class="footer-nav-items">FAQ</a></li>
-                        <li><a href="/assets/page/gallery.html" class="footer-nav-items">Gallery</a></li>
+                        <li><a href="/" class="footer-nav-items">Home</a></li>
+                        <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
+                        <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
+                        <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
+                        <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav-work footer-nav-wrapper">
                     <ul class="footer-nav-head">Work</ul>
                     <ul class="footer-nav-list">
-                        <li><a href="/assets/page/our-service.html" class="footer-nav-items">Services</a></li>
-                        <li><a href="/assets/page/contact-us.html" class="footer-nav-items">Contact Us</a></li>
+                        <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
+                        <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

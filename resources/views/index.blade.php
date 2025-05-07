@@ -352,29 +352,24 @@
                     </div>
                     <ul class="team__slider">
                         <li class="team_person">
-                            <img src="/assets/resources/img/Layer 11.png" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Sadipa Sidiq</h3>
-                            <p class="person-position">IT Consultant</p>
+                            <img src="{{ asset('resources/img/Komisaris/Budiyana.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <h3 class="person-name">Budiyana</h3>
+                            <p class="person-position">Komisaris</p>
                         </li>
                         <li class="team_person">
-                            <img src="/assets/resources/img/Layer 11.png" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Sadipa Sidiq</h3>
-                            <p class="person-position">IT Consultant</p>
+                            <img src="{{ asset('resources/img/Komisaris/Harnoko.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <h3 class="person-name">Harnoko Martono</h3>
+                            <p class="person-position">Komisaris</p>
                         </li>
                         <li class="team_person">
-                            <img src="/assets/resources/img/Layer 11.png" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Sadipa Sidiq</h3>
-                            <p class="person-position">IT Consultant</p>
+                            <img src="{{ asset('resources/img/Komisaris/Reza.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <h3 class="person-name">Reza M Thamrin</h3>
+                            <p class="person-position">Komisaris</p>
                         </li>
                         <li class="team_person">
-                            <img src="/assets/resources/img/Layer 11.png" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Sadipa Sidiq</h3>
-                            <p class="person-position">IT Consultant</p>
-                        </li>
-                        <li class="team_person">
-                            <img src="/assets/resources/img/Layer 11.png" alt="" loading="lazy" width="1701" height="1560">
-                            <h3 class="person-name">Sadipa Sidiq</h3>
-                            <p class="person-position">IT Consultant</p>
+                            <img src="{{ asset('resources/img/Management Team/Pak Rizal.png') }}" alt="" loading="lazy" width="1701" height="1560">
+                            <h3 class="person-name">Rizal M Ganjar</h3>
+                            <p class="person-position">CEO</p>
                         </li>
                     </ul>
                 </div>

@@ -49,8 +49,8 @@
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
                     <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Layanan"><span>Layanan</span></a></li>
                     <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="Tentang Kami"><span>Tentang Kami</span></a></li>
-                    <li><a href="/assets/page/artikel.html" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
-                    <li><a href="/assets/page/faq.html" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
+                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
+                    <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
                     <li><a href="/assets/page/career.html" class="horizontal-slide" data-replace="Karir" style="color: rgb(15, 41, 22);"><span>Karir</span></a></li>
@@ -60,7 +60,7 @@
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                <a href="/index.html"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1" style="color: rgb(15, 41, 22);">Menu</a>
@@ -69,10 +69,10 @@
                 <ul>
                     <li><a href="{{route('layanan')}}">Layanan</a></li>
                     <li><a href="{{route('aboutUs')}}">Tentang</a></li>
-                    <li><a href="/assets/page/artikel.html">Berita</a></li>
-                    <li><a href="/assets/page/faq.html">FAQ</a></li>
-                    <li><a href="/assets/page/career.html">Karir</a></li>
-                    <li><a href="/assets/page/contact-us.html">CONTACT</a></li>
+                    <li><a href="{{route('artikel')}}">Berita</a></li>
+                    <li><a href="{{route('faq')}}">FAQ</a></li>
+                    <li><a href="{{route('karir')}}">Karir</a></li>
+                    <li><a href="{{route('contact')}}">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -354,16 +354,16 @@
                         <ul class="footer-nav-list">
                             <li><a href="/" class="footer-nav-items">Home</a></li>
                             <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
-                            <li><a href="/assets/page/artikel.html" class="footer-nav-items">Article</a></li>
-                            <li><a href="/assets/page/faq.html" class="footer-nav-items">FAQ</a></li>
-                            <li><a href="/assets/page/gallery.html" class="footer-nav-items">Gallery</a></li>
+                            <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
+                            <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
+                            <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
                         </ul>
                     </div>
                     <div class="footer-nav-work footer-nav-wrapper">
                         <ul class="footer-nav-head">Work</ul>
                         <ul class="footer-nav-list">
                             <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
-                            <li><a href="/assets/page/contact-us.html" class="footer-nav-items">Contact Us</a></li>
+                            <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-nav-social footer-nav-wrapper">
@@ -404,16 +404,16 @@
                     <ul class="footer-nav-list">
                         <li><a href="/" class="footer-nav-items">Home</a></li>
                         <li><a href="{{route('aboutUs')}}" class="footer-nav-items">About us</a></li>
-                        <li><a href="/assets/page/artikel.html" class="footer-nav-items">Article</a></li>
-                        <li><a href="/assets/page/faq.html" class="footer-nav-items">FAQ</a></li>
-                        <li><a href="/assets/page/gallery.html" class="footer-nav-items">Gallery</a></li>
+                        <li><a href="{{route('artikel')}}" class="footer-nav-items">Article</a></li>
+                        <li><a href="{{route('faq')}}" class="footer-nav-items">FAQ</a></li>
+                        <li><a href="{{route('gallery')}}" class="footer-nav-items">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav-work footer-nav-wrapper">
                     <ul class="footer-nav-head">Work</ul>
                     <ul class="footer-nav-list">
                         <li><a href="{{route('layanan')}}" class="footer-nav-items">Services</a></li>
-                        <li><a href="/assets/page/contact-us.html" class="footer-nav-items">Contact Us</a></li>
+                        <li><a href="{{route('contact')}}" class="footer-nav-items">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -441,7 +441,6 @@
                 <a>
             </div>
         </div>
-
     </footer>
     <!-- Footer -->
 
