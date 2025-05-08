@@ -35,11 +35,10 @@
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-     
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
-
+    {{-- Header --}}
     <header id="#header" class="header">
         <nav class="navbig">
             <div class="navbig__wrapper flxcenter-vertical-spcbtwn">
@@ -47,37 +46,37 @@
                     <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
                 </div>
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
-                    <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Layanan"><span>Layanan</span></a></li>
-                    <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="Tentang Kami"><span>Tentang Kami</span></a></li>
-                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
+                    <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
+                    <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
+                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
                     <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
-                    <li><a href="/assets/page/career.html" class="horizontal-slide" data-replace="Karir" style="color: rgb(15, 41, 22);"><span>Karir</span></a></li>
-                    <a href="/assets/page/contact-us.html" class="button-cta-2">CONTACT</a>
+                    <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career" style="color: rgb(15, 41, 22);"><span>Career</span></a></li>
+                    <a href="{{route('contact')}}" class="button-cta-2">CONTACT</a>
                 </ul>
             </div>
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="/index.html"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1" style="color: rgb(15, 41, 22);">Menu</a>
             </div>
             <div class="mobile-menu" id="mobileMenu">
                 <ul>
-                    <li><a href="{{route('layanan')}}">Layanan</a></li>
-                    <li><a href="{{route('aboutUs')}}">Tentang</a></li>
-                    <li><a href="{{route('artikel')}}">Berita</a></li>
+                    <li><a href="{{route('layanan')}}">Services</a></li>
+                    <li><a href="{{route('aboutUs')}}">About</a></li>
+                    <li><a href="{{route('artikel')}}">Article</a></li>
                     <li><a href="{{route('faq')}}">FAQ</a></li>
-                    <li><a href="{{route('karir')}}">Karir</a></li>
+                    <li><a href="{{route('karir')}}">Career</a></li>
                     <li><a href="{{route('contact')}}">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    
+    {{-- Header --}}
     <!-- breadcrumb -->
      <div class="breadcrumb">
         <div class="breadcrumb__wrapper">
@@ -177,7 +176,7 @@
                 </div>
                 <div class="servicecard-wrapper">
                     <div class="servicecard-wrapper-top">
-                        <a href="/assets/page/Services/callcenter.html" class="ourservice-card">
+                        <a href="{{route('callcenter')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -191,7 +190,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/dataentry.html" class="ourservice-card">
+                        <a href="{{route('dataentry')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -205,7 +204,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/verification&validation.html" class="ourservice-card">
+                        <a href="{{route('verification-validation')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -219,7 +218,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/telemarketing.html" class="ourservice-card">
+                        <a href="{{route('telemarketing')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -235,7 +234,7 @@
                         </a>
                     </div>
                     <div class="servicecard-wrapper-bot">
-                        <a href="/assets/page/Services/livechat.html" class="ourservice-card">
+                        <a href="{{route('livechat')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -249,7 +248,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/deskcollection.html" class="ourservice-card">
+                        <a href="{{route('deskcollection')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -263,7 +262,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="/assets/page/Services/kyc.html" class="ourservice-card">
+                        <a href="{{route('kyc')}}" class="ourservice-card">
                             <div class="ourservice-card__overlay"></div>
                             <div href="" class="ourservice-card__content">
                                 <div class="ourservice-card__content-top">
@@ -297,7 +296,7 @@
                             <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd asdasdasd asdasgfdhj gfbvbfdbc tgdfscv ssdf</p>
                         </div>
                         <div class="cta-card-button-wrapper">
-                            <a href="" class="cta-card-button">
+                            <a href="{{route('contact')}}" class="cta-card-button">
                                 <h3>Let's connect</h3>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -313,7 +312,7 @@
                             <p>Building aksndka aksndka aksnd asdsad asdasd asdasdasdasd namjs jfdjsjdfdk dskafnfdun asdnjasndjn asdkn kanskdskndsknd</p>
                         </div>
                         <div class="cta-card-button-wrapper">
-                            <a href="" class="cta-card-button button-carrers">
+                            <a href="{{route('karir')}}" class="cta-card-button button-carrers">
                                 <h3>See the oportunity</h3>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>

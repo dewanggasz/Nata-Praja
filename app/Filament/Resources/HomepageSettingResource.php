@@ -107,7 +107,7 @@ class HomepageSettingResource extends Resource
 
     public static function canCreate(): bool
     {
-        return false; // hilangkan tombol "Create"
+        return true; // hilangkan tombol "Create"
     }
 
     public static function getPages(): array

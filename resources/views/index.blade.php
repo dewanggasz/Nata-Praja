@@ -14,7 +14,6 @@
     @vite (['resources/scss/style.scss', 'resources/js/app.js'])
 </head>
 <body>
-
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
@@ -44,31 +43,31 @@
                     <a href="{{'/'}}"><h1>NPS</h1></a> 
                 </div>
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn">
-                    <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Layanan"><span>Layanan</span></a></li>
-                    <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="Tentang Kami"><span>Tentang Kami</span></a></li>
-                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
+                    <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
+                    <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
+                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
                     <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
-                    <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Karir"><span>Karir</span></a></li>
+                    <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career"><span>Career</span></a></li>
                     <a href="{{route('contact')}}" class="button-cta-1">CONTACT</a>
                 </ul>
             </div>
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="./index.html"><h1>NPS</h1></a> 
+                <a href="/"><h1>NPS</h1></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1">Menu</a>
             </div>
             <div class="mobile-menu" id="mobileMenu">
                 <ul>
-                    <li><a href="{{route('layanan')}}">Layanan</a></li>
-                    <li><a href="{{route('aboutUs')}}">Tentang</a></li>
-                    <li><a href="{{route('artikel')}}">Berita</a></li>
+                    <li><a href="{{route('layanan')}}">Services</a></li>
+                    <li><a href="{{route('aboutUs')}}">About</a></li>
+                    <li><a href="{{route('artikel')}}">Article</a></li>
                     <li><a href="{{route('faq')}}">FAQ</a></li>
-                    <li><a href="{{route('karir')}}">Karir</a></li>
+                    <li><a href="{{route('karir')}}">Career</a></li>
                     <li><a href="{{route('contact')}}">CONTACT</a></li>
                 </ul>
             </div>
@@ -140,33 +139,11 @@
             <div class="client ">
                 <div class="client__wrapper clw-lp-anmt">
                     <div class="client__container clc-lp-anmt">
-                        <div class="client__slide hover1">
-                            <img src="{{ asset('resources/img/PLN INSURANCE.png') }}" alt="" height="30px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{ asset('resources/img/INDONESIA POWER.png') }}" alt="" height="30px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/NUSANTARA POWER.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/ENJINERING.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/ENERGI PRIMER.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/DP PLN.png')}}" alt="" height="50px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/HELEYORA POWER.png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/CAR (1).png')}}" alt="" height="40px">
-                        </div>
-                        <div class="client__slide hover1">
-                            <img src="{{asset('resources/img/PINHOME.png')}}" alt="" height="40px">
-                        </div>
+                        @foreach ($clientLogos as $logo)
+                            <div class="client__slide hover1">
+                                <img src="{{ asset('storage/' . $logo->logo_path) }}" alt="{{ $logo->logo_name }}" height="30px">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

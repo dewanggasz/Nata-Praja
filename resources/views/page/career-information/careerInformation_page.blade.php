@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <!-- icon -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    @vite (['resources/scss/style.scss', 'resources/js/app.js'])
 </head>
 <body>
 
@@ -42,43 +42,45 @@
     <!-- LOADING SCREEN -->
     <!-- LOADING SCREEN -->
 
+    {{-- Header --}}
     <header id="#header" class="header">
         <nav class="navbig">
             <div class="navbig__wrapper flxcenter-vertical-spcbtwn">
                 <div class="navbig-left logo-medium">
-                    <a href="/index.html"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                    <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
                 </div>
                 <ul class="navbig-center nav-list flxcenter-vertical-spcbtwn" style="color: rgb(15, 41, 22);">
-                    <li><a href="/assets/page/our-service.html" class="horizontal-slide" data-replace="Layanan"><span>Layanan</span></a></li>
-                    <li><a href="/assets/page/About-us.html" class="horizontal-slide" data-replace="Tentang Kami"><span>Tentang Kami</span></a></li>
-                    <li><a href="/assets/page/artikel.html" class="horizontal-slide" data-replace="Berita"><span>Berita</span></a></li>
-                    <li><a href="/assets/page/faq.html" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
+                    <li><a href="{{route('layanan')}}" class="horizontal-slide" data-replace="Services"><span>Services</span></a></li>
+                    <li><a href="{{route('aboutUs')}}" class="horizontal-slide" data-replace="About"><span>About</span></a></li>
+                    <li><a href="{{route('artikel')}}" class="horizontal-slide" data-replace="Article"><span>Article</span></a></li>
+                    <li><a href="{{route('faq')}}" class="horizontal-slide" data-replace="FAQ"><span>FAQ</span></a></li>
                 </ul>
                 <ul class="navbig-right cta-list flxcenter-vertical-spcbtwn">
-                    <li><a href="/assets/page/career.html" class="horizontal-slide" data-replace="Karir" style="color: rgb(15, 41, 22);"><span>Karir</span></a></li>
-                    <a href="/assets/page/contact-us.html" class="button-cta-2">CONTACT</a>
+                    <li><a href="{{route('karir')}}" class="horizontal-slide" data-replace="Career" style="color: rgb(15, 41, 22);"><span>Career</span></a></li>
+                    <a href="{{route('contact')}}" class="button-cta-2">CONTACT</a>
                 </ul>
             </div>
         </nav>
         <nav class="navmobile">
             <div class="navbig-left logo-medium">
-                <a href="/index.html"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
+                <a href="/"><h1 style="color: rgb(15, 41, 22) !important;">NPS</h1></a> 
             </div>
             <div class="hamburger-menu antimainstream" id="hamburger">
                 <a class="button-cta-1" style="color: rgb(15, 41, 22);">Menu</a>
             </div>
             <div class="mobile-menu" id="mobileMenu">
                 <ul>
-                    <li><a href="/assets/page/our-service.html">Layanan</a></li>
-                    <li><a href="/assets/page/About-us.html">Tentang</a></li>
-                    <li><a href="/assets/page/artikel.html">Berita</a></li>
-                    <li><a href="/assets/page/faq.html">FAQ</a></li>
-                    <li><a href="/assets/page/career.html">Karir</a></li>
-                    <li><a href="/assets/page/contact-us.html">CONTACT</a></li>
+                    <li><a href="{{route('layanan')}}">Services</a></li>
+                    <li><a href="{{route('aboutUs')}}">About</a></li>
+                    <li><a href="{{route('artikel')}}">Article</a></li>
+                    <li><a href="{{route('faq')}}">FAQ</a></li>
+                    <li><a href="{{route('karir')}}">Career</a></li>
+                    <li><a href="{{route('contact')}}">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    {{-- Header --}}
 
     <!-- breadcrumb -->
     <div class="breadcrumb">
@@ -105,8 +107,8 @@
                 <div class="career-page-cover__content">
                     <div class="career-page-cover__overlay-top">
                         <div class="sub-title">Nata Praja Careers</div>
-                        <h2 class="career-page-cover__head">Business Development.</h2>
-                        <p class="career-page-cover__paragraph">We are always seeking passionate and skilled individuals to join our dynamic team. If you’re ready to grow your career with PT Nata Praja Solusindo, send your CV and details to careers@natapraja.com. Let’s achieve greatness together!</p>
+                        <h2 class="career-page-cover__head">{{ $jobs->role }}</h2>
+                        <p class="career-page-cover__paragraph">{{ $jobs->cover_description }}</p>
                     </div>
                 </div>
             </div>
@@ -116,27 +118,23 @@
                 <artikel class="careercontent__requirement">
                     <H2>Job Responsibility</H2>
                     <ul>
-                        <li>1. Menjalin komunikasi yang baik dengan pelanggan</li>
-                        <li>2. Memberikan solusi di tiap kendala yang dihadapi pelanggan dengan bahasa yang mudah dimengerti</li>
+                        <li>{{ $jobs->responsibilities }}</li>
                     </ul>
                     <H2>Educational Requirement</H2>
                     <ul>
-                        <li>Pendidikan minimal D3</li>
+                        <li>{{ $jobs->education }}</li>
                     </ul>
                     <H2>Experience Requirement</H2>
                     <ul>
-                        <li>Berpengalaman/Fresh Graduate</li>
+                        <li>{{ $jobs->experience}}</li>
                     </ul>
                     <H2>Additional Requirement</H2>
                     <ul>
-                        <li>1. Pria/ Wanita maks. 28 tahun</li>
-                        <li>2. Bersedia bekerja shifting</li>
-                        <li>3. Memiliki kemampuan komunikasi yang baik</li>
+                        <li>{{$jobs->additional}}</li>
                     </ul>
                     <H2>Others Benefits</H2>
                     <ul>
-                        <li>1. BPJS Kesehatan</li>
-                        <li>2. BPJS Ketenagakerjaan</li>
+                        <li>{{$jobs->benefits}}</li>
                     </ul>
                 </artikel>
                 <a href="#" class="careerbutton">Daftar</a>
@@ -155,42 +153,42 @@
                         <div class="careercard__contentlft"><i class="fa-solid fa-list" style="color: #0f0e16;"></i></div>
                         <div class="careercard__contentrgt">
                             <h3>Job Category</h3>
-                            <h4>Agent</h4>
+                            <h4>{{$jobs->category}}</h4>
                         </div>
                     </div>
                     <div class="careercard__content">
                         <div class="careercard__contentlft"><i class="fa-solid fa-users fa-rotate-by" style="color: #0f2916; --fa-rotate-angle: 0deg;"></i></div>
                         <div class="careercard__contentrgt">
                             <h3>Job Position</h3>
-                            <h4>Agent Customer Service</h4>
+                            <h4>{{$jobs->position}}</h4>
                         </div>
                     </div>
                     <div class="careercard__content">
                         <div class="careercard__contentlft"><i class="fa-solid fa-user-tie" style="color: #0f2916;"></i></div>
                         <div class="careercard__contentrgt">
                             <h3>Job Type</h3>
-                            <h4>Project Based</h4>
+                            <h4>{{$jobs->type}}</h4>
                         </div>
                     </div>
                     <div class="careercard__content">
                         <div class="careercard__contentlft"><i class="fa-solid fa-wallet" style="color: #0f2916;"></i></div>
                         <div class="careercard__contentrgt">
                             <h3>Salary</h3>
-                            <h4>Negotiable</h4>
+                            <h4>{{$jobs->salary}}</h4>
                         </div>
                     </div>
                     <div class="careercard__content">
                         <div class="careercard__contentlft"><i class="fa-solid fa-location-dot" style="color: #0f2916;"></i></div>
                         <div class="careercard__contentrgt">
                             <h3>Job Location</h3>
-                            <h4>Yogyakarta, Indonesia</h4>
+                            <h4>{{$jobs->location}}</h4>
                         </div>
                     </div>
                     <div class="careercard__content">
                         <div class="careercard__contentlft"><i class="fa-regular fa-clock" style="color: #0f2916;"></i></div>
                         <div class="careercard__contentrgt">
                             <h3>Deadline</h3>
-                            <h4>1 Februari 2025</h4>
+                            <h4>{{$jobs->deadline}}</h4>
                         </div>
                     </div>
                 </div>
@@ -338,7 +336,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-    <script src="/assets/js/app.js"></script>
 </body>
 </html>
 

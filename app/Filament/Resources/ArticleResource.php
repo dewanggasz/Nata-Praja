@@ -56,8 +56,8 @@ class ArticleResource extends Resource
                         ->fileAttachmentsDirectory('article-content-image')
                         ->fileAttachmentsVisibility('public')
                         ->label('Isi Konten') 
-                        ->columnSpanFull()
-                        ->getStateUsing(fn ($record) => $record),
+                        ->columnSpanFull(),
+                    
                 ]),
             ]);
     }

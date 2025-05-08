@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->text('excerpt')->nullable();
+        Schema::create('client_logos', function (Blueprint $table) {
+            $table->id();
+            $table->string('logo_path');
+            $table->string('logo_name')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -21,8 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->dropColumn('excerpt');
-        });
+        Schema::dropIfExists('client_logos');
     }
 };
